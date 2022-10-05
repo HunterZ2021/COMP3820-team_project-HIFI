@@ -8,10 +8,10 @@ function index_createDetailed(params) {
 }
 
 
-function generalForm_save(params) {
+function generalForm_save() {
 
     // Retrieve answers from inputs
-    let answers = { 
+    var answers = { 
         "Recipient": document.querySelector('#Recipient'),
         "Identify": document.querySelector('#Identify'),
         "Situation": document.querySelector('#Situation'),
@@ -22,7 +22,7 @@ function generalForm_save(params) {
     }
 
     // Create QuestionnaireResponse JSON
-    let Response = {
+    var Response = {
         "resourceType": "QuestionnaireResponse",
         "text": {
             "status": "generated",
@@ -69,4 +69,3 @@ function generalForm_save(params) {
     
     return Response
 }
-
