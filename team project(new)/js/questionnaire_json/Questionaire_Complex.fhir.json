@@ -1,0 +1,183 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">ISBAR Questionnaire Detailed</div>"
+  },
+  "id": "1405948",
+  "name": "ISBAR_01",
+  "title": "ISBAR Form Detailed",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "item": [
+    {
+      "linkId": "Recipient",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Recipient.name",
+          "type": "string"
+        },
+        {
+          "linkId": "Recipient.contactNo",
+          "type": "integer"
+        },
+        {
+          "linkId": "Recipient.email",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "Identify",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Identify.patientName",
+          "type": "string"
+        },
+        {
+          "linkId": "Identify.patientAge",
+          "type": "integer"
+        },
+        {
+          "linkId": "Identify.patientSex",
+          "type": "choice",
+          "answerValueSet": "http://hl7.org/fhir/ValueSet/gender-identity"
+        },
+        {
+          "linkId": "Identify.patientAddress",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "linkId": "Situation",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Situation.encounterStatus",
+          "type": "string"
+        },
+        {
+          "linkId": "Situation.encounterReason",
+          "type": "string"
+        },
+        {
+          "linkId": "Situation.diagnosis/problem",
+          "type": "string"
+        },
+        {
+          "linkId": "Situation.reasonForTransfer",
+          "type": "string"
+        },
+        {
+          "linkId": "Situation.otherComments",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "Background",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Background.allergyIntolerance",
+          "type": "string"
+        },
+        {
+          "linkId": "Background.socialDeterminants",
+          "type": "string"
+        },
+        {
+          "linkId": "Background.pastRelevantMedHist",
+          "type": "string"
+        },
+        {
+          "linkId": "Background.socialIssue",
+          "type": "string"
+        },
+        {
+          "linkId": "Background.currentEpisodeMedication",
+          "type": "string"
+        },
+        {
+          "linkId": "Background.mentalHealthACT",
+          "type": "string"
+        },
+        {
+          "linkId": "Background.otherComments",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "Assessment",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Assessment.performer",
+          "type": "string"
+        },
+        {
+          "linkId": "Assessment.diagnosticReport",
+          "type": "string"
+        },
+        {
+          "linkId": "Assessment.investigations",
+          "type": "string"
+        },
+        {
+          "linkId": "Assessment.otherComments",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "Recommendation",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Recommendation.referralRequest",
+          "type": "string"
+        },
+        {
+          "linkId": "Recommendation.riskAssessment",
+          "type": "string"
+        },
+        {
+          "linkId": "Recommendation.actionsRequiredAfterHandover",
+          "type": "string"
+        },
+        {
+          "linkId": "Recommendation.otherComments",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "linkId": "Observation",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Observation.vitalSigns",
+          "type": "string"
+        },
+        {
+          "linkId": "Observation.breathing",
+          "type": "string"
+        },
+        {
+          "linkId": "Observation.behavioral",
+          "type": "string"
+        },
+        {
+          "linkId": "Observation.otherComments",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}

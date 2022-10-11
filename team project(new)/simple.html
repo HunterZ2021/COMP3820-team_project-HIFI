@@ -2,8 +2,10 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-    <title>Simple</title>
+    <title>Free-text Entry Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fhirclient/build/fhir-client.js"></script>
+    <script src="./js/simple_form.js"></script>
 </head>
 <body>
     <div style="background-color: #C0D4CA;height: 70px;width:100%; position:fixed;top:0;">
@@ -66,7 +68,7 @@
                 <div style="float: left;background-color: #61B5B2;padding-top: 5px;width: 100%;height: 100%;border-radius: 30px 30px 30px 30px;display:flex;justify-content:center;align-items:center;">
                     <div style="float: left;width: 50%;height: 50%;margin: auto;color: white;text-align: center;">
                         <div style="float: left;width: 100%;height: 80%;">
-                            <img src="images/save.png" style="max-width: 100%;max-height: 100%;">
+                            <button id="Save"><img src="images/save.png" style="max-width: 100%;max-height: 100%;"></button>
                         </div>
                         SAVE
                     </div>
@@ -86,7 +88,7 @@
                         Recipient
                     </div>
                     <div style="background-color: #DFECFA;height: 75px;display:flex;align-items:center;">
-                        <input style="margin-left: 5%;margin-right: 5%;width: 100%;height: 70%;">
+                        <input id="Recipient" style="margin-left: 5%;margin-right: 5%;width: 100%;height: 70%;">
                     </div>
                 </div>
                 <div>
@@ -94,7 +96,7 @@
                         Introduction
                     </div>
                     <div style="background-color: #DFECFA;height: 75px;display:flex;align-items:center;">
-                        <input style="margin-left: 5%;margin-right: 5%;width: 100%;height: 70%;">
+                        <input id="Introduction" style="margin-left: 5%;margin-right: 5%;width: 100%;height: 70%;">
                     </div>
                 </div>
                 <div>
@@ -102,15 +104,15 @@
                         Situation
                     </div>
                     <div style="background-color: #DFECFA;height: 75px;display:flex;align-items:center;">
-                        <input style="margin-left: 5%;margin-right: 5%;width: 100%;height: 70%;">
+                        <input id="Situation" style="margin-left: 5%;margin-right: 5%;width: 100%;height: 70%;">
                     </div>
                 </div>
-                <div id="Observation">
+                <div>
                     <div style="margin-left: 5%;height: 40px;font-size: 25px;font-style: italic;color: #006599;font-weight: bold;">
                         Observation
                     </div>
                     <div style="background-color: #DFECFA;height: 75px;display:flex;align-items:center;">
-                        <input style="margin-left: 5%;margin-right: 5%;width: 100%;height: 70%;">
+                        <input id="Observation" style="margin-left: 5%;margin-right: 5%;width: 100%;height: 70%;">
                     </div>
                 </div>
                 <div>
@@ -118,15 +120,15 @@
                         Background
                     </div>
                     <div style="background-color: #DFECFA;height: 75px;display:flex;align-items:center;">
-                        <input style="margin-left: 5%;margin-right: 5%;width: 100%;height: 70%;">
+                        <input id="Background" style="margin-left: 5%;margin-right: 5%;width: 100%;height: 70%;">
                     </div>
                 </div>
                 <div>
                     <div style="margin-left: 5%;height: 40px;font-size: 25px;font-style: italic;color: #006599;font-weight: bold;">
-                        Accessment
+                        Assessment
                     </div>
                     <div style="background-color: #DFECFA;height: 75px;display:flex;align-items:center;">
-                        <input style="margin-left: 5%;margin-right: 5%;width: 100%;height: 70%;">
+                        <input id="Assessment" style="margin-left: 5%;margin-right: 5%;width: 100%;height: 70%;">
                     </div>
                 </div>
                 <div>
@@ -134,7 +136,7 @@
                         Recommendation
                     </div>
                     <div style="background-color: #DFECFA;height: 75px;display:flex;align-items:center;">
-                        <input style="margin-left: 5%;margin-right: 5%;width: 100%;height: 70%;">
+                        <input id="Recommendation" style="margin-left: 5%;margin-right: 5%;width: 100%;height: 70%;">
                     </div>
                 </div>
             </form>

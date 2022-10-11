@@ -2,7 +2,10 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Complex Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fhirclient/build/fhir-client.js"></script>
+    <script src="./js/comlex_form.js"></script>
 </head>
 <body>
 <div style="background-color: #C0D4CA;height: 70px;width:100%; position:fixed;top:0">
@@ -88,16 +91,16 @@
                 </div>
                 <div style="float: left;width: 100%;height: 50px;margin-left: 10px;">
                     Name
-                    <input style="height: 30px;width: 50%;">
+                    <input id="Recipient_name" style="height: 30px;width: 50%;">
                 </div>
                 <div style="float: left;width: 100%;height: 50px;margin-left: 10px;">
                     <div style="float: left;width: 50%;height: 50px;">
                         Contact No.
-                        <input style="height: 30px;width: 50%;">
+                        <input id="Recipient_contactNo"" style="height: 30px;width: 50%;">
                     </div>
                     <div style="float: left;width: 50%;height: 50px;">
                         Email Address.
-                        <input style="height: 30px;width: 50%;">
+                        <input id="Recipient_emailAddress" style="height: 30px;width: 50%;">
                     </div>
                 </div>
             </div>
@@ -112,19 +115,19 @@
                             <div style="float: left;padding-left: 10px;padding-top: 10px;">
                                 Patient Name
                             </div>
-                            <input style="float: left;height: 30px;margin-left: 10px;margin-top: 7px;">
+                            <input id="Identify_name" style="float: left;height: 30px;margin-left: 10px;margin-top: 7px;">
                         </div>
                         <div style="float: left;width: 30%;height: 50px;">
                             <div style="float: left;padding-top: 10px;">
-                                Patient Age
+                                Patient Birth Date
                             </div>
-                            <input style="float: left;height: 30px;margin-left: 10px;margin-top: 7px;">
+                            <input id="Identify_patientBirthDate" style="float: left;height: 30px;margin-left: 10px;margin-top: 7px;">
                         </div>
                         <div style="float: left;width: 30%;height: 50px;">
                             <div style="float: left;padding-top: 10px;">
                                 Patient Gender
                             </div>
-                            <input style="float: left;height: 30px;margin-left: 10px;margin-top: 7px;">
+                            <input id="Identify_patientGender" style="float: left;height: 30px;margin-left: 10px;margin-top: 7px;">
                         </div>
                     </div>
                     <div style="float: left;width: 100%;height: 50px;">
@@ -132,7 +135,7 @@
                             <div style="float: left;">
                                 Patient Address
                             </div>
-                            <input style="float: left;height: 30px;width: 200%;margin-left: 10px;">
+                            <input id="Identify_patientAddress" style="float: left;height: 30px;width: 200%;margin-left: 10px;">
                         </div>
                     </div>
                 </div>
@@ -149,13 +152,13 @@
                                 <div style="float: left;">
                                     Encounter-status
                                 </div>
-                                <input style="float: left;margin-left: 10px;padding-top: 7px;width: 50%;height:30px">
+                                <input id="Situation_encounterStatus" style="float: left;margin-left: 10px;padding-top: 7px;width: 50%;height:30px">
                             </td>
                             <td style="float: left;width: 49%;height: 100%;">
                                 <div style="float: left;">
                                     Encounter-Reasons
                                 </div>
-                                <input style="float: left;margin-left: 10px;padding-top: 7px;width: 50%;height:30px">
+                                <input id="Situation_encounterReasons" style="float: left;margin-left: 10px;padding-top: 7px;width: 50%;height:30px">
                             </td>
                         </tr>
                         <tr style="float: left;width: 100%;height: 35px;border-top: 1px solid;">
@@ -177,7 +180,7 @@
                                 <div style="float: left;">
 
                                 </div>
-                                <input style="float: left;margin-left: 10px;width: 90%;height:50px;">
+                                <input id="Situation_diagnosisProblem" style="float: left;margin-left: 10px;width: 90%;height:50px;">
                             </td>
 
                             <td style="float: left;width: 49%;height: 100%;border-left: 1px solid;">

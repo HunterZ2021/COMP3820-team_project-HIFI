@@ -2,7 +2,7 @@
     "resourceType": "Questionnaire",
     "text": {
       "status": "generated",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">ISBAR Questionnaire Simple</div>"
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">ISBAR Questionnaire Detailed</div>"
     },
     "id": "1405947",
     "name": "ISBAR_02",

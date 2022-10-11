@@ -1,0 +1,175 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"></div>"
+    },
+    "status": "in-progress",
+    "questionnaire": "https://r4.smarthealthit.org/Questionnaire/1410971",
+    "subject": {
+        "reference": "https://r4.smarthealthit.org/Patient/476d3544-6370-479f-9ac9-c43434aae12f",
+        "type": "Patient"
+    },
+
+    "item": [
+        {
+            "linkId": "Recipient",
+            "item": [
+                {
+                    "linkId": "Recipient.name",
+                    "answer": []
+                },
+                {
+                    "linkId": "Recipient.contactNo",
+                    "answer": []
+                },
+                {
+                    "linkId": "Recipient.email",
+                    "answer": []
+                }
+            ]
+        },
+        {
+            "linkId": "Identify",
+            "item": [
+                {
+                    "linkId": "Identify.patientName",
+                    "answer": []
+                },
+                {
+                    "linkId": "Identify.patientAge",
+                    "answer": []
+                },
+                {
+                    "linkId": "Identify.patientSex",
+                    "answer": []
+                },
+                {
+                    "linkId": "Identify.patientAddress",
+                    "answer": []
+                }
+            ]
+        },
+        {
+            "linkId": "Situation",
+            "item": [
+                {
+                    "linkId": "Situation.encounterStatus",
+                    "answer": []
+                },
+                {
+                    "linkId": "Situation.encounterReason",
+                    "answer": []
+                },
+                {
+                    "linkId": "Situation.diagnosis/problem",
+                    "answer": []
+                },
+                {
+                    "linkId": "Situation.reasonForTransfer",
+                    "answer": []
+                },
+                {
+                    "linkId": "Situation.otherComments",
+                    "answer": []
+                }
+            ]
+        },
+        {
+            "linkId": "Background",
+            "item": [
+                {
+                    "linkId": "Background.allergyIntolerance",
+                    "answer": []
+                },
+                {
+                    "linkId": "Background.socialDeterminants",
+                    "answer": []
+                },
+                {
+                    "linkId": "Background.pastRelevantMedHist",
+                    "answer": []
+                },
+                {
+                    "linkId": "Background.socialIssue",
+                    "answer": []
+                },
+                {
+                    "linkId": "Background.currentEpisodeMedication",
+                    "answer": []
+                },
+                {
+                    "linkId": "Background.mentalHealthACT",
+                    "answer": []
+                },
+                {
+                    "linkId": "Background.otherComments",
+                    "answer": []
+                }
+            ]
+        },
+        {
+            "linkId": "Assessment",
+            "item": [
+                {
+                    "linkId": "Assessment.performer",
+                    "answer": []
+                },
+                {
+                    "linkId": "Assessment.diagnosticReport",
+                    "answer": []
+                },
+                {
+                    "linkId": "Assessment.investigations",
+                    "answer": []
+                },
+                {
+                    "linkId": "Assessment.otherComments",
+                    "answer": []
+                }
+            ]
+        },
+        {
+            "linkId": "Recommendation",
+            "item": [
+                {
+                    "linkId": "Recommendation.referralRequest",
+                    "answer": []
+                },
+                {
+                    "linkId": "Recommendation.riskAssessment",
+                    "answer": []
+                },
+                {
+                    "linkId": "Recommendation.actionsRequiredAfterHandover",
+                    "answer": []
+                },
+                {
+                    "linkId": "Recommendation.otherComments",
+                    "answer": []
+                }
+            ]
+        },
+        {
+            "linkId": "Observation",
+            "item": [
+                {
+                    "linkId": "Observation.vitalSigns",
+                    "answer": []
+                },
+                {
+                    "linkId": "Observation.breathing",
+                    "answer": []
+                },
+                {
+                    "linkId": "Observation.behavioral",
+                    "answer": []
+                },
+                {
+                    "linkId": "Observation.otherComments",
+                    "answer": []
+                }
+            ]
+        }
+    ]
+}
